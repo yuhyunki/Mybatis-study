@@ -30,7 +30,7 @@ public class MemberMenu {
 			
 			switch(no) {
 			case 1 : memberController.registNewMember(inputMember()); break;
-//			case 2 : memberController.selectAllMembers(); break;
+			case 2 : memberController.selectAllMembers(); break;
 //			case 3 : memberController.searchMemberById(inputMemberId()); break;
 //			case 4 : memberController.searchMemberByGender(inputGender()); break;
 //			case 5 : memberController.modifyPassword(inputMemberId(), inputPassword()); break;
@@ -49,6 +49,7 @@ public class MemberMenu {
 
 	private Map<String, String> inputMember() {
 		
+		sc.nextLine();
 		System.out.print("ID를 입력해주세요 : ");
 		String memberId = sc.nextLine();
 		System.out.print("비밀번호를 입력해주세요 : ");

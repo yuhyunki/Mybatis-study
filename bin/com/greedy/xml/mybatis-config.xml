@@ -15,6 +15,6 @@
  		</environment>
  	</environments>
  	<mappers>
- 		<mapper resource="com/greedy/section01/xmlconfig/menu-mapper.xml"/>
+ 		<mapper resource="com/greedy/xml/member-mapper.xml"/>
  	</mappers>
  </configuration>
