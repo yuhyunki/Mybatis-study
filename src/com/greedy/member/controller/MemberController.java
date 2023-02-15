@@ -1,5 +1,6 @@
 package com.greedy.member.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import com.greedy.member.model.dto.MemberDTO;
@@ -28,6 +29,18 @@ public class MemberController {
 			memberResultView.displayDmlResult("insertSuccess");
 		} else {
 			memberResultView.displayDmlResult("insertFailed");
+		}
+		
+	}
+
+	public void selectAllMembers() {
+
+		List<MemberDTO> memberList = memberService.findAllMembers();
+		
+		if(memberList != null) {
+			memberResultView.display(memberList);
+		} else {
+			memberResultView.displayDmlResult("selectFailed");
 		}
 		
 	}
